@@ -18,7 +18,7 @@ RCT_EXPORT_MODULE()
 
 static NSString *const detectionNoResultsMessage = @"Something went wrong";
 
-RCT_REMAP_METHOD(detectFromUri, detectFromUri:(NSString *)imagePath resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+RCT_REMAP_METHOD(detectFromUri, detectFromUri:(NSString *)imagePath (NSString *)lang resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     if (!imagePath) {
         resolve(@NO);
         return;
@@ -54,7 +54,7 @@ RCT_REMAP_METHOD(detectFromUri, detectFromUri:(NSString *)imagePath resolver:(RC
         }
         
         
-        G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@"eng"];
+        G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:lang];
         tesseract.delegate = self;
         [tesseract setImage:image];
         CGRect boundingBox;
