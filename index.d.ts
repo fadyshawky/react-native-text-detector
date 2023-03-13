@@ -11,7 +11,7 @@ export interface TextDetectorResponse {
 }
 
 declare class TextDetector {
-  static detectFromUri(uri: string): Promise<TextDetectorResponse[]>;
+  static detectFromUri(uri: string, lang: string): Promise<TextDetectorResponse[]>;
 }
 
 export default TextDetector;
