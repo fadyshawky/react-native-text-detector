@@ -18,7 +18,7 @@ RCT_EXPORT_MODULE()
 
 static NSString *const detectionNoResultsMessage = @"Something went wrong";
 
-RCT_REMAP_METHOD(detectFromUri, detectFromUri:(NSString *)imagePath (NSString *)lang resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+RCT_REMAP_METHOD(detectFromUri, detectFromUri:(NSString *)imagePath lang:(NSString *)lang resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     if (!imagePath) {
         resolve(@NO);
         return;
