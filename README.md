@@ -23,6 +23,11 @@ For deciding between which one is better check this blog on [Hearbeat by Fritz.a
 
 `$ npm install react-native-text-detector --save` or `yarn add react-native-text-detector`
 
+## Automatic Linking
+add the following line to your Podfile
+
+`$ pod 'TesseractOCRiOS', :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git'`
+
 ### Manual installation
 
 #### iOS
