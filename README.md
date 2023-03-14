@@ -26,7 +26,7 @@ For deciding between which one is better check this blog on [Hearbeat by Fritz.a
 ## Automatic Linking
 add the following line to your Podfile
 
-`$ pod 'TesseractOCRiOS', :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git'`
+`pod 'TesseractOCRiOS', :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git'`
 
 ### Manual installation
 
