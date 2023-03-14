@@ -15,5 +15,4 @@ Pod::Spec.new do |s|
 
 
   s.dependency     "React"
-  s.dependency     'TesseractOCRiOS', :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git'
 end
